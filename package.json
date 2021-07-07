@@ -1,0 +1,22 @@
+{
+  "name": "thomasadamportfolio",
+  "version": "1.0.0",
+  "description": "My Portfolio",
+  "main": "app/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/triglace57/ThomasAdamPortfolio.git"
+  },
+  "author": "Thomas Adam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/triglace57/ThomasAdamPortfolio/issues"
+  },
+  "homepage": "https://github.com/triglace57/ThomasAdamPortfolio#readme",
+  "dependencies": {
+    "sass": "^1.35.1"
+  }
+}

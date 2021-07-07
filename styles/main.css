@@ -1,0 +1,180 @@
+/* Variable Color */
+/* Font */
+@font-face {
+  font-family: "TitanOne";
+  src: url("/fonts/TitanOne-Regular.ttf") format("ttf");
+}
+/*Animate*/
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    border-color: #74b9ff;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+/**/
+* {
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  font: 100% "TitanOne", sans-serif;
+  margin: none;
+}
+*::-ms-scrollbar {
+  display: none !important;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+*::-moz-scrollbar {
+  display: none !important;
+}
+
+/**/
+body {
+  background: #0D0D15;
+  justify-items: center;
+  margin: none;
+}
+
+select {
+  display: block;
+}
+
+h1.title_subject {
+  color: #95a5a6;
+  margin-left: 5vh;
+  font-size: 3em;
+}
+
+section.start_page {
+  width: 100%;
+  height: 100vh;
+}
+section.start_page header {
+  display: flex;
+  margin-top: 1%;
+}
+section.start_page header .logo {
+  margin-left: 1%;
+}
+section.start_page header a {
+  padding: auto;
+  margin: 0px 50px 0px 0px;
+  flex: left;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+section.start_page header div.social_link {
+  padding: 0.8%;
+}
+section.start_page main {
+  margin-top: 30vh;
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-align: center;
+}
+section.start_page main h1.intro {
+  font-size: 4em;
+  margin-bottom: 0px;
+  display: inline-block;
+  text-align: center;
+  width: 13em;
+  animation: typing 5s steps(28), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+}
+section.start_page main h2.intro {
+  font-size: 2em;
+  font-style: italic;
+}
+section.start_page main span.name {
+  color: #74b9ff;
+}
+
+section.about_me {
+  width: 100%;
+  height: 100vh;
+  color: white;
+}
+section.about_me .contain_about {
+  display: flex;
+  flex-direction: row;
+}
+section.about_me .contain_text_about {
+  position: relative;
+  top: 4vh;
+  left: 25vh;
+}
+section.about_me .contain_text_about h2.about {
+  font-size: 2em;
+}
+section.about_me .contain_text_about .text_about {
+  font-size: 1.3em;
+  font-style: italic;
+}
+section.about_me div.img_me {
+  padding-top: 10vh;
+  padding-left: 40vh;
+}
+section.about_me div.img_me img {
+  border-radius: 10% 20% 10% 30%;
+}
+
+section.work {
+  width: 100%;
+  height: auto;
+  color: white;
+}
+section.work .contain_work {
+  width: auto;
+  position: relative;
+}
+section.work .contain_work .div_work {
+  margin-left: 10vh;
+  margin-bottom: 2em;
+}
+section.work .contain_work .div_work .h2_work {
+  font-size: 2em;
+}
+section.work .contain_work .div_work a {
+  margin-left: 10vh;
+  text-decoration: none;
+  color: white;
+}
+section.work .contain_work .div_work .description {
+  margin-left: 5vh;
+  color: #74b9ff;
+  font-size: 1.2em;
+}
+section.work .contain_work .div_work img {
+  border-radius: 5%;
+  filter: grayscale(0);
+  transition: filter 2s;
+}
+section.work .contain_work .div_work img:hover {
+  filter: grayscale(1);
+}
+section.work .contain_work .div_work:nth-child(2n) {
+  text-align: right;
+}
+section.work .contain_work .div_work:nth-child(2n) .h2_work {
+  margin-right: 10vh;
+}
+section.work .contain_work .div_work:nth-child(2n) a {
+  margin-right: 20vh;
+}
+section.work .contain_work .div_work:nth-child(2n) .description {
+  margin-right: 10vh;
+}
+
+/*# sourceMappingURL=main.css.map */
