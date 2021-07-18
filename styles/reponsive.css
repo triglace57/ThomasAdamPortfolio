@@ -1,0 +1,304 @@
+/*
+Done 300 to 600 Mobile 
+
+Done 600 to 850 Tablet 
+
+Done 850 to 1200 
+
+Done Laptop & desktop displays 1200+
+*/
+@media (max-width: 600px) {
+  h1.title_subject {
+    margin-left: 5vh;
+    font-size: 2em;
+  }
+
+  .fade_in {
+    transform: translateX(-20px);
+    transition: opacity 2s linear, transform 4s;
+    opacity: 0;
+  }
+
+  .appear {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+
+  section.start_page {
+    width: 100%;
+    height: 100vh;
+  }
+  section.start_page header {
+    width: 100%;
+    display: block;
+    margin-top: 5%;
+  }
+  section.start_page header .logo {
+    display: none;
+  }
+  section.start_page header a {
+    margin: 0;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  section.start_page header div.social_link a {
+    text-align: center;
+  }
+  section.start_page main {
+    padding-top: 30vh;
+    text-align: center;
+  }
+  section.start_page main h1.intro {
+    font-size: 1.2em;
+    display: inline-block;
+    text-align: center;
+    width: 15em;
+    animation: typing 5s steps(28), blink 0.5s step-end infinite alternate;
+  }
+  section.start_page main h2.intro {
+    font-size: 1.2em;
+    font-style: italic;
+  }
+
+  section.about_me {
+    height: 100vh;
+  }
+  section.about_me .contain_about {
+    margin-left: 5vh;
+  }
+  section.about_me .contain_text_about {
+    width: 100%;
+  }
+  section.about_me .contain_text_about h2.about {
+    font-size: 1.3em;
+  }
+  section.about_me .contain_text_about .text_about {
+    font-size: 1.1em;
+    font-style: italic;
+  }
+  section.about_me div.img_me {
+    display: none;
+    margin-left: calc(100% / 20);
+  }
+  section.about_me div.img_me img {
+    width: 250px;
+    height: 250px;
+    border-radius: 10% 20% 10% 30%;
+  }
+  section.about_me .download {
+    width: 20%;
+    padding: 0.2em;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: white;
+  }
+  section.about_me .download:hover {
+    background-color: #95a5a6;
+  }
+
+  section.work .contain_work {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+  }
+  section.work .contain_work .div_work {
+    text-align: center;
+  }
+  section.work .contain_work .div_work .h2_work {
+    margin-bottom: 5%;
+    margin-left: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  section.work .contain_work .div_work .description {
+    margin-left: 0;
+    font-size: 1em;
+  }
+  section.work .contain_work .div_work img {
+    display: block;
+    margin: auto;
+    border-radius: 5%;
+    width: 60%;
+    height: 90%;
+  }
+  section.work .contain_work .div_work:nth-child(2n) {
+    text-align: center;
+  }
+  section.work .contain_work .div_work:nth-child(2n) .h2_work {
+    margin-right: 0;
+  }
+  section.work .contain_work .div_work:nth-child(2n) a {
+    margin-right: 0;
+  }
+  section.work .contain_work .div_work:nth-child(2n) .description {
+    margin-right: 0;
+  }
+
+  section.contact_me {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+  }
+  section.contact_me .contain_contact {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: white;
+  }
+  section.contact_me .text_contact {
+    margin-right: none;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  section.contact_me .email {
+    margin-right: 0;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+}
+@media (min-width: 600px) and (max-width: 850px) {
+  h1.title_subject {
+    margin-left: 5vh;
+    font-size: 2.5em;
+  }
+
+  section.start_page {
+    width: 100%;
+    height: 100vh;
+  }
+  section.start_page header {
+    display: block;
+    width: 100%;
+    margin-top: 5%;
+  }
+  section.start_page header .logo {
+    display: none;
+  }
+  section.start_page header a {
+    margin: 0;
+    font-size: 1.8em;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  section.start_page header div.social_link a {
+    text-align: center;
+  }
+  section.start_page main {
+    padding-top: 30vh;
+    text-align: center;
+  }
+  section.start_page main h1.intro {
+    font-size: 2.5em;
+    display: inline-block;
+    text-align: center;
+    width: 15em;
+    animation: typing 5s steps(28), blink 0.5s step-end infinite alternate;
+  }
+  section.start_page main h2.intro {
+    font-size: 2em;
+    font-style: italic;
+  }
+
+  section.about_me {
+    height: 80vh;
+  }
+  section.about_me .about {
+    display: flex;
+    flex-direction: column;
+  }
+  section.about_me .contain_about {
+    margin-left: 5vh;
+  }
+  section.about_me .contain_text_about {
+    width: 100%;
+  }
+  section.about_me .contain_text_about h2.about {
+    font-size: 2em;
+  }
+  section.about_me .contain_text_about .text_about {
+    font-size: 1.8em;
+    font-style: italic;
+  }
+  section.about_me div.img_me {
+    display: none;
+    margin-left: calc(100% / 20);
+  }
+  section.about_me div.img_me img {
+    width: 250px;
+    height: 250px;
+    border-radius: 10% 20% 10% 30%;
+  }
+  section.about_me .download {
+    width: 20%;
+    padding: 0.2em;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: white;
+  }
+  section.about_me .download:hover {
+    background-color: #95a5a6;
+  }
+
+  section.work .contain_work {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+  }
+  section.work .contain_work .div_work {
+    margin: 5%;
+    text-align: center;
+  }
+  section.work .contain_work .div_work .h2_work {
+    margin-left: 0;
+    font-size: 1.8em;
+    font-weight: bold;
+  }
+  section.work .contain_work .div_work .description {
+    margin-left: 0;
+    font-size: 1.5em;
+  }
+  section.work .contain_work .div_work img {
+    display: block;
+    margin: auto;
+    border-radius: 5%;
+    width: 60%;
+    height: 90%;
+  }
+  section.work .contain_work .div_work:nth-child(2n) {
+    text-align: center;
+  }
+  section.work .contain_work .div_work:nth-child(2n) .h2_work {
+    margin-right: 0;
+  }
+  section.work .contain_work .div_work:nth-child(2n) a {
+    margin-right: 0;
+  }
+  section.work .contain_work .div_work:nth-child(2n) .description {
+    margin-right: 0;
+  }
+
+  section.contact_me {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 96vh;
+  }
+  section.contact_me .contain_contact {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: white;
+  }
+  section.contact_me .text_contact {
+    margin-right: none;
+    font-weight: bold;
+    font-size: 1.8em;
+  }
+  section.contact_me .email {
+    margin-right: 0;
+    font-weight: bold;
+    font-size: 1.8em;
+  }
+}
+
+/*# sourceMappingURL=reponsive.css.map */
