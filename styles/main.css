@@ -47,7 +47,7 @@ select {
   flex-direction: row;
 }
 
-h1.title_subject {
+h1.title-subject {
   color: #95a5a6;
   margin-left: 5vh;
   font-size: 3em;
@@ -73,6 +73,10 @@ h1.title_subject {
 .appear_right {
   transform: translateX(0);
   opacity: 1;
+}
+
+section {
+  display: table;
 }
 
 section.start_page {
@@ -142,7 +146,7 @@ section.start_page main span.name {
 }
 
 section.about_me {
-  height: 100vh;
+  height: 80vh;
   color: white;
 }
 section.about_me div.about {
@@ -161,32 +165,19 @@ section.about_me .contain_text_about {
 section.about_me .contain_text_about h2.about {
   font-size: 2.5em;
 }
-section.about_me .contain_text_about .text_about {
+section.about_me .contain_text_about .text-about {
+  margin-bottom: 15px;
   width: 80%;
   font-size: 1.5em;
   font-style: italic;
 }
 section.about_me div.img_me {
-  display: none;
-  margin-left: calc(100% / 20);
+  margin-left: 5%;
 }
 section.about_me div.img_me img {
+  width: 90%;
+  height: 80%;
   border-radius: 10% 20% 10% 30%;
-}
-section.about_me .download {
-  width: 8%;
-  height: 20%;
-  margin-left: 30%;
-  padding: 0.5em;
-  text-align: center;
-  background-color: #74b9ff;
-  font-size: x-large;
-  text-decoration: none;
-  color: white;
-  border-radius: 2ch;
-}
-section.about_me .download:hover {
-  background-color: #95a5a6;
 }
 section.about_me .fade_in {
   transform: translateX(-20px);
@@ -198,6 +189,48 @@ section.about_me .appear {
   transform: translateX(20px);
   visibility: visible;
   opacity: 1;
+}
+
+.download {
+  width: 5%;
+  height: 13%;
+  margin-left: 30%;
+  padding: 0.4em;
+  text-align: center;
+  background-color: #74b9ff;
+  font-size: 1em;
+  text-decoration: none;
+  color: white;
+  border-radius: 2ch;
+}
+
+.download:hover {
+  background-color: #95a5a6;
+}
+
+section.skill {
+  height: 100vh;
+  color: white;
+  display: grid;
+  grid-template-rows: auto;
+}
+section.skill :not(h1) {
+  margin-left: 5%;
+}
+section.skill h2.title-skill {
+  font-size: 2em;
+  font-style: italic;
+}
+section.skill div.skill-contain {
+  display: flex;
+}
+section.skill div.skill-contain div.skill-item {
+  width: 10%;
+  height: 75%;
+  color: #74b9ff;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
 }
 
 section.work {
