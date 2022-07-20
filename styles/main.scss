@@ -223,6 +223,7 @@ section.skill {
         display: flex;
         
         div.skill-item {
+            display: inline-table;
             width: 10%;
             height: 75%;
             color: $flat-blue;

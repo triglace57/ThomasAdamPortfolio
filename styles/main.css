@@ -225,6 +225,7 @@ section.skill div.skill-contain {
   display: flex;
 }
 section.skill div.skill-contain div.skill-item {
+  display: inline-table;
   width: 10%;
   height: 75%;
   color: #74b9ff;
