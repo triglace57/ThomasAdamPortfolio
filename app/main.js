@@ -22,8 +22,10 @@ const appearWithScrollRight = new IntersectionObserver((entries,appearWithScroll
 },appearOptions)
 
 faders_left.forEach(fader_left => {
+    console.log(fader_left)
     appearWithScroll.observe(fader_left)
 });
 faders_right.forEach(fader_right => {
+    console.log(fader_right)
     appearWithScrollRight.observe(fader_right)
 })
