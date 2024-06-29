@@ -48,7 +48,7 @@ select {
 }
 
 h1.title-subject {
-  color: #95a5a6;
+  color: #1ce4fbdb;
   margin-left: 5vh;
   font-size: 3em;
 }
@@ -195,7 +195,9 @@ section.about_me .appear {
   width: 5%;
   height: 13%;
   margin-left: 30%;
-  padding: 0.4em;
+  padding: 0.5em;
+  padding-right: 0.7em;
+  padding-left: 0.7em;
   text-align: center;
   background-color: #74b9ff;
   font-size: 1em;
