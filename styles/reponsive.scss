@@ -81,7 +81,7 @@ section.about_me{
         margin-left: calc(100% / 20);
         img{
             width: 250px;
-            height: 250px;
+            height: auto;
             border-radius: 10% 20% 10% 30%; 
         }
     }
@@ -224,7 +224,7 @@ section.contact_me{
             margin-left: calc(100% / 20);
             img{
                 width: 250px;
-                height: 250px;
+                height: auto;
                 border-radius: 10% 20% 10% 30%; 
             }
         }
